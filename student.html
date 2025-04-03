@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Student Portal</div>
+        <div class="nav-links">
+            <a href="index.html">Logout</a>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <h2>Mark Attendance</h2>
+        <div class="form-group">
+            <input type="text" id="attendance-code" placeholder="Enter 6-digit code">
+        </div>
+        <video id="webcam" width="300" height="300" autoplay></video>
+        <button onclick="verifyAndMarkAttendance()">Mark Attendance</button>
+        
+        <h3 style="margin-top: 2rem;">Current Assignments</h3>
+        <div id="assignments-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Initialize webcam on load -->
+    <script>initializeFaceRecognition();</script>
+</body>
+</html>
